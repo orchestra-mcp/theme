@@ -1,7 +1,7 @@
 {
   "name": "@orchestra-mcp/theme",
-  "version": "0.2.0",
-  "description": "Color themes and CSS variables for Orchestra MCP — Tailwind CSS v4",
+  "version": "1.0.0",
+  "description": "Color themes and CSS variables for Orchestra MCP \u2014 Tailwind CSS v4",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -13,12 +13,29 @@
       "require": "./dist/index.js"
     },
     "./styles": "./src/styles/base.css",
-    "./themes": { "import": "./dist/themes.mjs", "require": "./dist/themes.js", "types": "./dist/themes.d.ts" },
-    "./variants": { "import": "./dist/variants.mjs", "require": "./dist/variants.js", "types": "./dist/variants.d.ts" },
-    "./theme-switcher": { "import": "./dist/theme-switcher.mjs", "require": "./dist/theme-switcher.js", "types": "./dist/theme-switcher.d.ts" }
+    "./themes": {
+      "import": "./dist/themes.mjs",
+      "require": "./dist/themes.js",
+      "types": "./dist/themes.d.ts"
+    },
+    "./variants": {
+      "import": "./dist/variants.mjs",
+      "require": "./dist/variants.js",
+      "types": "./dist/variants.d.ts"
+    },
+    "./theme-switcher": {
+      "import": "./dist/theme-switcher.mjs",
+      "require": "./dist/theme-switcher.js",
+      "types": "./dist/theme-switcher.d.ts"
+    }
   },
-  "files": ["dist", "src"],
-  "publishConfig": { "access": "public" },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/orchestra-mcp/theme"
@@ -26,7 +43,7 @@
   "funding": "https://github.com/sponsors/fadymondy",
   "license": "MIT",
   "dependencies": {
-        "postcss": "^8.4.49",
+    "postcss": "^8.4.49",
     "tailwindcss": "^4.0.0-alpha.30"
   },
   "peerDependencies": {
@@ -44,5 +61,11 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "prepublishOnly": "pnpm build"
   },
-  "keywords": ["orchestra", "mcp", "react", "components", "theme"]
+  "keywords": [
+    "orchestra",
+    "mcp",
+    "react",
+    "components",
+    "theme"
+  ]
 }
